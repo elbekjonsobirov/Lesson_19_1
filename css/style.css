@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(184, 87, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 {
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    animation-name: divAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+.div2 {
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    animation-name: divAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0.33s;
+}
+
+.div3 {
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    animation-name: divAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0.66s;
+}
+
+
+@keyframes divAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
